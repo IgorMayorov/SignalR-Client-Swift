@@ -187,6 +187,7 @@ public class HubConnectionBuilder {
             httpConnectionOptionsCopy.httpClientFactory = httpConnectionOptions.httpClientFactory
             httpConnectionOptionsCopy.skipNegotiation = httpConnectionOptions.skipNegotiation
             httpConnectionOptionsCopy.requestTimeout = httpConnectionOptions.requestTimeout
+            httpConnectionOptionsCopy.authenticationChallengeHandler = httpConnectionOptions.authenticationChallengeHandler
             return HttpConnection(url: url, options: httpConnectionOptionsCopy, transportFactory: transportFactory, logger: logger)
         }
         
